@@ -1,0 +1,227 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  position: relative;
+  padding: 50px 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  background: rgba(160, 160, 160, 0.5);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #ececec;
+  color: #000;
+  z-index: 1000;
+}
+
+.closeButton:hover {
+  background-color: #cacaca;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.registrationOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 120px;
+  margin: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registrationOption:nth-child(1) {
+  color: #235688;
+}
+
+.registrationOption:nth-child(2) {
+  color: #e87800;
+}
+
+.registrationOption:hover:nth-child(1) {
+  background-color: #235688;
+  color: white;
+}
+
+.registrationOption:hover:nth-child(2) {
+  background-color: #e87800;
+  color: white;
+}
+
+.registrationContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.registrationContent img {
+  width: 70px;
+  height: 70px;
+}
+
+.registrationOption:hover img {
+  filter: brightness(10);
+}
+
+.registrationOption:hover:nth-child(2) img {
+  filter: invert(50%) sepia(20%) saturate(100%) hue-rotate(70deg)
+    brightness(199%) contrast(200%);
+}
+
+.registrationContent span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .modal {
+    padding: 40px 40px;
+  }
+
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .registrationOption {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+/* Mobile Responsive (576px)*/
+@media (max-width: 576px) {
+  .registrationOption {
+    margin: 10px;
+  }
+
+  .registrationContent img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Mobile Responsive (480px) */
+@media (max-width: 480px) {
+  .modal {
+    padding: 30px;
+  }
+
+  .closeButton {
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .options {
+    flex-direction: row;
+  }
+
+  .registrationOption {
+    width: 100px;
+    height: 80px;
+    margin: 15px;
+  }
+
+  .registrationContent img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mobile Responsive (320px) */
+@media (max-width: 320px) {
+  .modal {
+    padding: 20px;
+  }
+
+  .closeButton {
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .options {
+    flex-direction: row;
+  }
+
+  .registrationOption {
+    width: 80px;
+    height: 60px;
+    margin: 12px;
+  }
+
+  .registrationContent img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: landscape) {
+  .modal {
+    padding: 15px 15px;
+  }
+
+  .closeButton {
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .registrationOption {
+    width: 70px;
+    height: 50px;
+    margin: 12px;
+  }
+
+  .registrationContent img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .registrationContent span {
+    font-size: 8px;
+  }
+}

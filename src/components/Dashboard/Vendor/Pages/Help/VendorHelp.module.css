@@ -1,0 +1,385 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15vw;
+  background-color: #ffffff;
+}
+
+.leftPanel .options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5rem;
+  gap: 15px;
+}
+
+.leftPanel .options a {
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.leftPanel .options a:hover {
+  color: #ddd;
+}
+
+.leftPanel .logout {
+  margin-bottom: 20px;
+}
+
+.leftPanel .optionIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar {
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 85vw;
+  height: 70px;
+  background-color: white;
+}
+
+.navbar span {
+  background-color: #1974a6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+}
+
+.help {
+  width: 25px;
+  height: 25px;
+  margin: 30px;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85vw;
+  min-height: 100vh;
+  background-color: #e3e4e5;
+}
+
+.grayBackground {
+  width: 81vw;
+  min-height: 90vh;
+  padding: 0;
+  margin: 30px;
+  background-color: #ffffff;
+}
+
+.heading {
+  color: #152c5b;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.heading img {
+  margin-left: 10px;
+  width: 60px;
+  height: 50px;
+}
+
+.userInfoColumn {
+  width: 600px;
+  margin: 20px;
+  padding: 0;
+}
+
+.signupForm {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+
+.formField label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  color: rgba(98, 98, 98, 1);
+}
+
+.formField {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formField input {
+  width: 82%;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border: none;
+  background-color: rgba(195, 209, 220, 0.25);
+}
+
+.dragging .dropArea {
+  border: 2px dashed #1974a6;
+}
+
+.dropArea {
+  cursor: pointer;
+  padding: 20px;
+  width: 82%;
+  text-align: center;
+  border: 2px dashed #ccc;
+  background-color: rgba(195, 209, 220, 0.25);
+}
+
+.dropArea img {
+  width: 50px;
+  height: auto;
+}
+
+.docTypes {
+  font-weight: 400;
+  color: #a9b2ba;
+  margin-top: 5px;
+}
+
+.subjectTextArea {
+  width: 95%;
+  height: 80px;
+  resize: none;
+  font-size: 15px;
+  margin-top: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(195, 209, 220, 0.25);
+}
+
+.descriptionTextArea {
+  width: 95%;
+  height: 100px;
+  resize: none;
+  font-size: 15px;
+  margin-top: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(195, 209, 220, 0.25);
+}
+
+.formField input[type="file"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.preferredContact {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.preferredContactLabel {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+  color: rgba(98, 98, 98, 1);
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxOption {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.customCheckbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.customCheckbox + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.customCheckbox + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.customCheckbox:checked + label:before {
+  background-color: #235688;
+}
+
+.customCheckbox + label:after {
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  font-size: 18px;
+  color: white;
+  display: none;
+}
+
+.customCheckbox:checked + label:after {
+  display: block;
+}
+
+.signupButton {
+  width: 40%;
+  padding: 18px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: rgba(35, 86, 136, 1);
+}
+
+/* Media Query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    width: 100%;
+  }
+
+  .rightPanel {
+    width: 100%;
+  }
+
+  .grayBackground {
+    width: 100%;
+  }
+
+  .userInfoColumn {
+    width: 100%;
+  }
+
+  .signupForm {
+    flex-direction: column;
+  }
+
+  .formField input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftPanel {
+    width: 100%;
+  }
+
+  .rightPanel {
+    width: 100%;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .heading {
+    margin-left: 10px;
+  }
+
+  .formField input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .leftPanel {
+    align-items: center;
+  }
+
+  .leftPanel .options {
+    align-items: center;
+  }
+
+  .options a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .leftPanel {
+    margin-top: 2rem;
+  }
+
+  .options a {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .leftPanel {
+    margin-top: 1rem;
+  }
+
+  .options a {
+    font-size: 12px;
+  }
+
+  .leftPanel .optionIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .leftPanel .options a {
+    margin: 5px 0;
+  }
+
+  .formField input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .leftPanel {
+    margin-top: 0.5rem;
+  }
+
+  .formField input {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,308 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 1s ease;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  left: 40px;
+  top: 30%;
+  width: 700px;
+  height: 200px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.overlayText {
+  padding: 10px 20px;
+  margin-top: -60px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: left;
+  color: #09427a;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.registrationButton {
+  position: absolute;
+  left: 80px;
+  top: 75%;
+  padding: 15px 50px;
+  transform: translateY(-50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #e87800;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.registrationButton:hover {
+  background-color: #d26600;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 50vh;
+  }
+
+  .content {
+    width: 50%;
+    left: 30px;
+    top: 30%;
+  }
+
+  .overlayText {
+    font-size: 30px;
+  }
+
+  .registrationButton {
+    left: 60px;
+    top: 70%;
+    padding: 20px 50px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    height: 60vh;
+  }
+
+  .content {
+    left: 10px;
+    top: 20%;
+  }
+
+  .overlayText {
+    font-size: 20px;
+  }
+
+  .registrationButton {
+    left: 25px;
+    top: 70%;
+    padding: 12px 24px;
+    font-size: 20px;
+  }
+}
+
+/* Tablets Responsive */
+@media (max-width: 768px) {
+  .container {
+    height: 50vh;
+  }
+
+  .content {
+    width: 60%;
+    left: 2%;
+    top: 15%;
+  }
+
+  .overlayText {
+    max-width: 350px;
+    margin-right: 80px;
+    font-size: 25px;
+  }
+
+  .registrationButton {
+    padding: 8px 20px;
+    font-size: 22px;
+    left: 50px;
+    top: 70%;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .container {
+    height: 60vh;
+  }
+
+  .content {
+    left: -10px;
+    top: 20%;
+  }
+
+  .overlayText {
+    font-size: 20px;
+  }
+
+  .registrationButton {
+    left: 25px;
+    top: 70%;
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .container {
+    height: 50vh;
+  }
+
+  .content {
+    width: 60%;
+    left: 10px;
+    top: 30%;
+  }
+
+  .overlayText {
+    font-size: 16px;
+  }
+
+  .registrationButton {
+    left: 50px;
+    top: 80%;
+    font-size: 16px;
+  }
+}
+
+/* Mobile Responsive (480px) */
+@media (max-width: 425px) {
+  .container {
+    height: 40vh;
+  }
+
+  .content {
+    width: 80%;
+    left: -20px;
+    top: 10px;
+  }
+
+  .overlayText {
+    font-size: 14px;
+  }
+
+  .registrationButton {
+    left: 20px;
+    top: 70%;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) and (orientation: landscape) {
+  .container {
+    height: 50vh;
+  }
+
+  .content {
+    width: 80%;
+    left: -20px;
+    top: -10px;
+  }
+
+  .overlayText {
+    font-size: 14px;
+  }
+
+  .registrationButton {
+    left: 20px;
+    top: 75%;
+    padding: 8px 18px;
+    font-size: 10px;
+  }
+}
+
+/* Mobile Responsive (375px) */
+@media (max-width: 375px) {
+  .container {
+    height: 35vh;
+  }
+
+  .content {
+    width: 80%;
+    left: -25px;
+    top: 5%;
+  }
+
+  .overlayText {
+    font-size: 10px;
+  }
+
+  .registrationButton {
+    left: 14px;
+    top: 75%;
+    padding: 6px 12px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+/* Mobile Responsive (320px) */
+@media (max-width: 320px) {
+  .container {
+    height: 30vh;
+  }
+
+  .content {
+    width: 80%;
+    left: -25px;
+    top: -25px;
+  }
+
+  .overlayText {
+    font-size: 10px;
+  }
+
+  .registrationButton {
+    left: 14px;
+    top: 75%;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: landscape) {
+  .container {
+    height: 40vh;
+  }
+
+  .content {
+    left: -10px;
+    top: -40px;
+  }
+
+  .overlayText {
+    font-size: 8px;
+  }
+
+  .registrationButton {
+    left: 30px;
+    top: 80%;
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}

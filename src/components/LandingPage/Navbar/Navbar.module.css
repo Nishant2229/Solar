@@ -1,0 +1,662 @@
+.navbar {
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  z-index: 100;
+  color: #333;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.div1 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 30px;
+  gap: 30px;
+}
+
+.div2 {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  margin: 120px;
+  gap: 30px;
+}
+
+.div3 {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.actions {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f3b01e;
+  transition: color 0.3s ease;
+}
+
+.actions button:hover {
+  color: #eea509;
+}
+
+.loginContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.loginContainer:hover img {
+  filter: invert(88%) sepia(30%) saturate(7428%) hue-rotate(190deg)
+    brightness(96%) contrast(94%);
+}
+
+.arrow {
+  padding: auto;
+  width: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.loginButton {
+  background-color: transparent;
+  border: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 18px;
+  color: #166fc9;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.loginDropdown {
+  margin-right: 70px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.loginDropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  width: 100%;
+  min-width: 100px;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+.loginDropdown .dropdownContent.show {
+  display: block;
+}
+
+.loginDropdown .dropdownContent a {
+  display: block;
+  padding: 12px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #166fc9;
+  border: 1px solid gray;
+}
+
+.loginDropdown .dropdownContent :last-child {
+  color: #f3b01e;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.MobileLogo {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 100px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .div1,
+  .div2,
+  .div3 {
+    margin-left: 0px;
+  }
+
+  .actions button {
+    font-size: 14px;
+  }
+
+  .loginContainer {
+    margin-right: 20px;
+  }
+
+  .MobileLogo {
+    width: 60px;
+  }
+
+  .hamburgerMenu {
+    font-size: 30px;
+  }
+
+  .mobileMenu {
+    padding: 20px;
+  }
+}
+
+/* Portrait orientation for tablets at 1024px */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .navbar {
+    width: 100;
+    height: 80px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .div1,
+  .div2,
+  .div3 {
+    display: none;
+  }
+
+  .actions button {
+    display: none;
+  }
+
+  .loginContainer {
+    display: none;
+  }
+
+  .MobileLogo {
+    display: flex;
+    justify-content: flex-start;
+    width: 70px;
+    margin-left: 40px;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    margin: 40px;
+    font-size: 40px;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 200;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    margin: 5px;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #166fc9;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .mobileMenu button:hover,
+  .mobileMenu a:hover {
+    color: #f3b01e;
+  }
+}
+
+/* Landscape orientation styles for 1024px */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .navbar {
+    height: 100px;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .div1,
+  .div2,
+  .div3 {
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .actions {
+    margin: 0;
+  }
+
+  .actions button {
+    font-size: 12px;
+  }
+
+  .loginContainer {
+    margin: 0;
+  }
+
+  .loginButton {
+    font-size: 14px;
+  }
+
+  .MobileLogo {
+    width: 50px;
+  }
+
+  .hamburgerMenu {
+    font-size: 25px;
+  }
+
+  .mobileMenu {
+    padding: 15px;
+  }
+}
+
+/* Tablets Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100;
+    height: 80px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .div1,
+  .div2,
+  .div3 {
+    display: none;
+  }
+
+  .actions button {
+    display: none;
+  }
+
+  .loginContainer {
+    display: none;
+  }
+
+  .MobileLogo {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 60px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 200;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    margin: 5px;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #166fc9;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .mobileMenu button:hover,
+  .mobileMenu a:hover {
+    color: #f3b01e;
+  }
+}
+
+/* Landscape orientation for mobiles */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar {
+    height: 80px;
+  }
+
+  .loginDropdown {
+    margin: 10px;
+  }
+
+  .loginDropdown .dropdownContent {
+    min-width: 70px;
+    margin-top: 30px;
+  }
+
+  .loginDropdown .dropdownContent a {
+    padding: 10px 10px;
+    font-size: 10px;
+  }
+
+  .MobileLogo {
+    width: 100%;
+    max-width: 60px;
+    margin: 20px;
+  }
+
+  .hamburgerMenu {
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  .mobileMenu {
+    top: 80px;
+    padding: 30px;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Responsive (480px) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .actions {
+    margin-left: 2px;
+  }
+
+  .actions button {
+    font-size: 6px;
+  }
+
+  .loginButton {
+    white-space: nowrap;
+    font-size: 6px;
+  }
+
+  .arrow {
+    width: 8px;
+  }
+
+  .loginDropdown {
+    margin: 2px;
+  }
+
+  .loginDropdown .dropdownContent {
+    min-width: 60px;
+    margin-top: 12px;
+  }
+
+  .loginDropdown .dropdownContent a {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
+
+/* Portrait orientation for tablets at 425px */
+@media (max-width: 425px) and (orientation: portrait) {
+  .navbar {
+    width: 100%;
+    height: 60px;
+  }
+  .logo {
+    display: none;
+  }
+
+  .MobileLogo {
+    width: 100%px;
+    max-width: 45px;
+    margin: 10px;
+  }
+
+  .hamburgerMenu {
+    margin: 10px;
+    font-size: 30px;
+  }
+}
+
+/* Landscape orientation for tablets at 425px */
+@media (max-width: 425px) and (orientation: landscape) {
+  .navbar {
+    height: 50px;
+    justify-content: space-evenly;
+  }
+  .MobileLogo {
+    width: 40px;
+    margin: 10px;
+  }
+  .hamburgerMenu {
+    margin: 10px;
+    font-size: 30px;
+  }
+  .mobileMenu {
+    top: 50px;
+    padding: 10px;
+  }
+  .mobileMenu button,
+  .mobileMenu a {
+    font-size: 8px;
+    margin: 0;
+  }
+}
+
+/* Mobile Responsive (max-width: 375px) */
+@media (max-width: 375px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .actions {
+    margin-left: 0px;
+    padding: 0;
+  }
+
+  .actions button {
+    font-size: 4px;
+  }
+
+  .loginButton {
+    white-space: nowrap;
+    font-size: 4px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .arrow {
+    width: 8px;
+    margin: 4px;
+  }
+
+  .loginDropdown {
+    margin: 0px;
+  }
+
+  .loginDropdown .dropdownContent {
+    min-width: 20px;
+    margin-top: 12px;
+  }
+
+  .loginDropdown .dropdownContent a {
+    padding: 4px 6px;
+    font-size: 6px;
+  }
+
+  .MobileLogo {
+    margin: 10px;
+    width: 100%;
+    max-width: 35px;
+    height: auto;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  .mobileMenu {
+    top: 50px;
+    padding: 10px;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    font-size: 8px;
+  }
+}
+
+/* Mobile Responsive (max-width: 320px) */
+@media (max-width: 320px) {
+  .navbar {
+    height: 45px;
+  }
+
+  .actions {
+    margin-left: 2px;
+    padding: 0;
+  }
+
+  .actions button {
+    font-size: 4px;
+  }
+
+  .loginButton {
+    white-space: nowrap;
+    font-size: 4px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .arrow {
+    width: 8px;
+  }
+
+  .loginDropdown {
+    margin: 0px;
+  }
+
+  .loginDropdown .dropdownContent {
+    min-width: 15px;
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+
+  .loginDropdown .dropdownContent a {
+    padding: 3px 5px;
+    font-size: 6px;
+  }
+
+  .MobileLogo {
+    width: 100%px;
+    max-width: 30px;
+    margin: 10px;
+  }
+
+  .hamburgerMenu {
+    margin: 10px;
+    font-size: 20px;
+  }
+
+  .mobileMenu {
+    padding: 10px;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) and (orientation: landscape) {
+  .navbar {
+    height: 40px;
+  }
+
+  .loginDropdown .dropdownContent {
+    min-width: 8px;
+    margin-top: 0px;
+    margin-right: 4px;
+  }
+
+  .loginDropdown .dropdownContent a {
+    padding: 3px 5px;
+    font-size: 6px;
+  }
+
+  .MobileLogo {
+    width: 30px;
+    margin: 10px;
+  }
+
+  .hamburgerMenu {
+    margin: 10px;
+  }
+
+  .mobileMenu {
+    top: 40px;
+    padding: 4px;
+  }
+
+  .mobileMenu button,
+  .mobileMenu a {
+    font-size: 6px;
+    margin: 0;
+    padding: 6px;
+    font-weight: 400;
+  }
+}

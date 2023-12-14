@@ -1,0 +1,169 @@
+/* VendorRegistration.module.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #235688;
+  margin: 0;
+  padding: 0;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 40%;
+  color: #fff;
+  padding: 0 70px;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #1682b4, #1974a6, #205284);
+}
+
+.welcomeText {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.welcomeText h1 {
+  font-size: 46px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.welcomeText p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loginButton {
+  background-color: transparent !important;
+  color: #235688;
+  padding: 15px 70px;
+  margin: 20px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #1682b4, #1974a6, #205284) !important;
+}
+
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  width: 60%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.signupForm {
+  max-width: 450px;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.heading img {
+  position: relative;
+  margin-left: 10px;
+  width: 60px;
+  height: 50px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #626262;
+  margin-bottom: 10px;
+}
+
+.formField label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.formField input {
+  width: 100%;
+  font-size: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f0f3f6;
+}
+
+.signupButton {
+  background: linear-gradient(135deg, #1682b4, #1974a6, #205284) !important;
+  color: #fff;
+  padding: 15px 80px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.orText {
+  position: relative;
+  background-color: white;
+  padding: 0px 5px;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.socialLogin {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 0px;
+  width: 40px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.logo:hover {
+  background-color: #ededed;
+}
+
+.arrow {
+  width: 50px;
+  height: auto;
+}
